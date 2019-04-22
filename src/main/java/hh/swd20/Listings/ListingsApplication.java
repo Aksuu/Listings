@@ -27,7 +27,7 @@ public class ListingsApplication {
 			
 			itemRepository.save(new Item("First header", "First description"));
 			
-			log.info("Fetch all books");
+			log.info("Fetch all items");
 			for (Item item : itemRepository.findAll()) {
 				log.info(item.toString());
 			}
